@@ -1,0 +1,21 @@
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.qq.com
+MAIL_PORT=25
+MAIL_USERNAME=2595389179@qq.com
+MAIL_PASSWORD=gphqfymkbjibdiag   //授权码
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=2595389179@qq.com
+MAIL_FROM_NAME=Laravel
+
+
+
+	$name = '学院君';
+        $flag = Mail::send('email.test',['name'=>'kgd'],function($message){   //视图邮件模板，变量
+            $to = '13612833901@163.com';
+            $message ->to($to)->subject('测试邮件');
+        });
+        if($flag){
+            echo '发送邮件成功，请查收！';
+        }else{
+            echo '发送邮件失败，请重试！';
+        }
