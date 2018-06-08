@@ -1,0 +1,4 @@
+参考laravel5.5文档社会化登陆
+
+client_id以及client_secret  申请方法如下：
+http://www.chanzhi.org/book/chanzhieps/206.html

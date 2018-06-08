@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 use Mail;
 
+
 class MailController extends Controller
 {
     public function send()
